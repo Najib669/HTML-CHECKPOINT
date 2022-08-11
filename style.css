@@ -1,0 +1,31 @@
+body {
+  margin-top: 100px;
+  background-color: #0a0411;
+  color: #d15c04;
+  text-align: center;
+}
+
+#loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border: 4px solid #d15c04;
+  border-radius: 50%;
+  border-top-color: #fcd659;
+  border-top-width: 8px;
+  animation: spin 14s linear infinite;
+  -webkit-animation: spin 14s linear infinite;
+  filter: blur(4px) drop-shadow(2px -7px 16px #d15c04);
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
